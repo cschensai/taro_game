@@ -55,7 +55,7 @@ export default class Index extends Component {
 
   handleNavigate = () => {
     Taro.navigateTo({
-      url: '/pages/test/index'
+      url: '/pages/packageA/apple/index'
     });
   }
   renderGameList = () => {
@@ -66,6 +66,7 @@ export default class Index extends Component {
           thumb={item.cover_image}
           title={item.name}
           note={`${item.language_support}/${item.genres[0]}/${item.game.post_num}条讨论`}
+          onClick={this.handleNavigate}
         />
       )
     })
