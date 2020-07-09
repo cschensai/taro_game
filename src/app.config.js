@@ -1,8 +1,9 @@
 export default {
   pages: [
-    'pages/index/index'
+    'pages/index/index',
   ],
-  subpackages: [{
+  // 这里分包字段如果需要在百度subPackages编译，要是用驼峰命名
+  subPackages: [{
     root: 'pages/packageA/',
     pages: [
       'apple/index',
